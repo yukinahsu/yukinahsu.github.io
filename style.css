@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/** CSS Reset End **/
+
+
+.hero-img {
+    background-image: url(hero-img.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.slogan {
+    color: #79452d;
+    font-size: 100px;
+    text-align: center;
+    font-weight: blod;
+    padding-top: 35vh;
+}
+
+.button {
+    /**
+    border-width: 3px;
+    border-color: brown;
+    border-style: outset;
+    **/
+    border: 3px outset brown;
+    font-size: 30px;
+    color: #fff;    
+    background-color: brown;
+    width:300px;
+    text-align: center;
+    /* margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 50px auto 0;
+    
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    padding: 15px 0;
+    border-radius: 30px 10px;
+    transition: all .3s;
+    display: block;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: brown;
+    font-weight: bold;
+    border-color: chocolate;
+}
+
+.header {
+    background-color: rgba(136, 103, 81, 0.9);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.logo {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    width: 30%;
+}
+
+.menu {
+    display: inline-block;
+    width: 69%;
+    text-align: right;
+}
+
+.menu a {
+    color: #ffe6d9;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 50%;
+    transition: all .3s;
+    text-decoration: none;
+    
+}
+
+.menu a:hover {
+    background-color: rgba(132, 80, 42, 0.6);
+    color: #fff;
+}
+
+.m1 {
+    position: relative;
+    display: inline;
+}
+
+.dropdown {
+    display: none;
+    background: rgba(136, 103, 81, 0.9);
+    width: 200px;
+    padding: 20px 0;
+    position: absolute;
+    top: 57px;
+    left: 15px;
+}
+
+.m1:hover .dropdown {
+    display: block;
+}
+
+.about-img {
+    width: 800px;
+    height: auto;
+}
+
+.about-wrap {
+    width: 1100px;
+    margin: 100px auto;
+    position: relative;
+    height: 500px;
+}
+
+.about-wrap .text {
+    width: 450px;
+    background: rgba(116, 72, 56, 0.6);
+    padding: 50px;
+    position: absolute;
+    left: 0;
+    top: 160px;
+    z-index: 2;
+}
+
+.about-wrap .photo {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.ball {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ball-1 {
+    background: #f4c57c;
+    width: 60px;
+    height: 60px;
+    left: -150px;
+    top: -30px;
+}
+
+.ball-2 {
+    background: #d3fa69;
+    width: 80px;
+    height: 80px;
+    right: -180px;
+    top: 90px;
+}
+
+.ball-3 {
+    background: #76d0ff;
+    width: 120px;
+    height: 120px;
+    left: -60px;
+    top: 180px;
+}
+
+.content1, .content2 {
+    width: 1100px;
+    margin: 50px auto;
+}
+
+.text, .photo {
+    float: left;
+}
+
+.content-img {
+    width: 500px;
+    height: auto;
+}
+
+.content-img2 {
+    width: 700px;
+    height: auto;
+}
+
+.content1 .photo {
+    width: 500px;
+}
+
+.content1 .text {
+    width: 550px;
+    margin-left: 50px;
+}
+
+.content2 .photo {
+    width: 700px;
+    position: relative;
+    margin-left: -100px;
+    z-index: 1;
+}
+
+.content2 .text {
+    width: 400px;
+    background: rgba(42, 187, 240, 0.4);
+    padding: 50px;
+    position: relative;
+    top: 100px;
+    z-index: 2;
+    height: 200px;
+    overflow: auto;
+}
+
+.content2 {
+    clear: both;
+}
+
+.content1, .content2 {
+    overflow: hidden;
+}
+
+.top-button {
+    width: 70px;
+    height: 70px;
+    background: #7e3000;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: block;
+    transition: all .3s;
+    z-index: 4;
+}
+
+.top-arrow {
+    border-top: 3px solid #fff;
+    border-left:  3px solid #fff;
+    width: 10px;
+    height: 10px;
+    margin: 30px auto;
+    transform: rotate(45deg);
+    display: block;
+    transition: all .3s;
+    z-index: 5;
+}
+
+.top-button:hover {
+    background: #50b3d0;
+}
+
+.top-button:hover .top-arrow {
+    border-top: 3px solid #026fdb;
+    border-left:  3px solid #026fdb;
+}
+
+.content3 {
+    width: 1180px;
+    overflow: hidden;
+    margin: 100px auto;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 60px;
+    overflow: hidden;
+    position: relative;
+}
+
+.content3 .box:last-child {
+    margin-right: 0;
+}
+
+.overlay {
+    background: rgba(44, 33, 26, 0.8);
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all .5s;
+    
+}
+
+.box:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
