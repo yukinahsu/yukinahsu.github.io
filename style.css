@@ -1,8 +1,72 @@
-/* nav bar */
+/* nav */
+.nav {
+    position: fixed;
+    top: 50%;
+    margin-top: -145px;
+    right: 35px;
+    z-index: 15;
+}
+
+.cnt-txt {
+    color: #6A4653;
+    font-weight: bold;
+    margin-top: -55px;
+    width: 85px;
+    top: 50%;
+    position: absolute;
+    left: -35px;
+    -webkit-transform: matrix(0,-1,1,0,0,0);
+}
+
+.nav li {
+    margin-bottom: 60px;
+}
+
+.nav li.active a {
+    background: #FF0057;
+}
+
+.nav li a {
+    width: 15px;
+    background: #6A4653;
+    display: block;
+    height: 15px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 75%;
+    background: #6A4653;
+    margin-left: 19px;
+}
+
+.nav li a span {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    width: 120px;
+    text-align: center;
+    position: absolute;
+    left: -75px;
+    top: 0;
+}
+
+/* nav bar
 .top-navbar {
     background-color: #F5F2F3;
 }
-
+ */
 
 /* Hero Title 4塊背景色 */
 
@@ -37,6 +101,14 @@
     font-size: 11rem;
     font-weight: bolder;
     color: #F5F2F3;
+}
+
+.web-title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #BDADB3;
+    /* text-shadow: 3px 3px rgba(255, 0, 87, 0.25); */
+    text-shadow: 0 0 10px #6A4653;
 }
 
 /* Hero Shot 內容 */
@@ -145,20 +217,58 @@
 
 .find-description {
     margin-top: 2rem;
+    line-height: 2rem;
+}
+
+.find-description p {
+    line-height: 2rem;
 }
 
 .phone-a {
-    width: 250px;
+    width: 300px;
     height: auto;
 }
 
 .span-a {
+    position: absolute;
     text-align: center;
+}
+
+.line-top {
+    width: 35%;
+    height: 1px;
+    border-top: solid #0DBDF6 1px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50px;
+    left: 160px;
+}
+
+.line-right {
+    width: 30%;
+    height: 1px;
+    border-top: solid #0DBDF6 1px;
+    position: absolute;
+    top: 210px;
+    left: 310px;
+}
+
+.line-bottom {
+    width: 40%;
+    height: 1px;
+    border-top: solid #0DBDF6 1px;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 60px;
+    left: 149px;
 }
 
 .icons-b {
     width: 100px;
     height: auto;
+    position: absolute;
+    top: 160px;
+    left: 179px;
 }
 
 .find-cm {
@@ -203,7 +313,7 @@
     left: 60px;
     z-index: 1;
     border-radius: 10px;
-/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    /*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 .gd-bg-colr {
@@ -225,7 +335,7 @@
     padding: 45px 55px;
 }
 
-.cs-ins-2 {    
+.cs-ins-2 {
     position: absolute;
     right: 0;
     z-index: 5;
@@ -248,11 +358,29 @@
 .gd-01 {
     background: url(img/Graphic/ylh-01-400.jpg);
 }
+.gd-02 {
+    background: url(img/Graphic/GD-bg-02.jpg);
+}
+.gd-03 {
+    background: url(img/Graphic/gd-bg-03.jpg);
+}
+
+
 
 /* -----------  Contact  ------------ */
 
 .ych-social a {
     text-decoration: none;
+}
+
+/* .socail-1 {
+    display: block;
+    transition: all .3s;
+}
+
+.social-1:hover {
+    filter: drop-shadow(#ffffff 80px 0);
+
 }
 
 .top-button {
@@ -270,7 +398,7 @@
 
 .top-arrow {
     border-top: 3px solid #fff;
-    border-left:  3px solid #fff;
+    border-left: 3px solid #fff;
     width: 12px;
     height: 12px;
     margin: 30px auto;
@@ -286,15 +414,15 @@
 
 .top-button:hover .top-arrow {
     border-top: 3px solid #fff;
-    border-left:  3px solid #fff;
+    border-left: 3px solid #fff;
 }
-
+ */
 .ych-footer {
     width: 100%;
     height: 200px;
     background-color: #A59097;
     text-align: center;
-    
+
 }
 
 
